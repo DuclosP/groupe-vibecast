@@ -1,0 +1,11 @@
+// font family
+@mixin fontfamily ($size: 16px, $height : 20px, $weight : 400, $color: white, $spacing: 0px, $style : normal, $align : left) {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    color: $color;
+    font-style: $style;
+    letter-spacing: $spacing;
+    text-align: $align;
+}
