@@ -1,4 +1,4 @@
-console.log('Coucou les pipous ♥ :D');
+console.log('Coucou les pipous ♥ :D ');
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
