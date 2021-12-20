@@ -1,3 +1,8 @@
+body {
+    width:100%;
+    height:100%;
+}
+
 .wrapper  {
     width: 1200px; 
     margin: 0 auto;
@@ -21,5 +26,45 @@ h3 {
         $size : 34px,
         $weight : 800, 
         $height : 44.2px,
+        $color: black,
     )
+}
+
+// section 1 // 
+
+.dj-demo {
+    display: flex;
+    width:100%;
+    margin-bottom: 500px ;
+}
+
+.dj-demo > * {
+    width:50%;
+    position: relative;
+    padding: 0 48px 0 32px;
+}
+
+.dj-demo img {
+    display: block;
+    height:auto;
+    position: absolute;
+}
+
+.dj-demo .shadowbloc:nth-child(1) {
+    padding: 0 0 87%;
+} 
+
+.dj-demo .shadowbloc:nth-child(1) img {
+width: 100%;
+}
+
+.dj-demo .shadowbloc:nth-child(2) {
+    padding: 0 0 68%;
+
+}
+
+.dj-demo .shadowbloc:nth-child(2) img {
+    right:0;
+    bottom:0;
+    width:40%;
 }
