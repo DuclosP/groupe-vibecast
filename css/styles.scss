@@ -1,0 +1,15 @@
+//importation depuis les dossiers
+@import "base/reset";
+@import "base/typography";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "components/buttons";
+
+@import "layout/general";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
