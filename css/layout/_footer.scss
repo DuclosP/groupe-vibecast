@@ -1,0 +1,26 @@
+.footer{
+  background-color: #111;
+  color: white;
+  padding: 48px 0;
+  width: 100%;
+  .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+    background-color: #fff;
+    height: 48px;
+    width: 48px;
+    margin-left: 16px;
+    color:black;
+    }
+  }
+  }
+  a{
+    color: white;
+  }
+}

@@ -3,3 +3,23 @@
     border-radius: 4px;
     background-color: white;
 }
+
+.btn-green {
+    font-weight: 500;
+    background: #05b564;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 48px;
+    padding: 0 24px;
+}
+
+.btn-white{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 48px;
+    padding: 0 24px;
+}
