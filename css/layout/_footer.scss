@@ -4,21 +4,29 @@
   padding: 48px 0;
   width: 100%;
   .wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    a{
-    background-color: #fff;
-    height: 48px;
-    width: 48px;
-    margin-left: 16px;
-    color:black;
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        position: relative;
+        z-index: 100;
+        background-color: #fff;
+        height: 48px;
+        width: 48px;
+        margin-left: 16px;
+        color:black;
+        i{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
-  }
   }
   a{
     color: white;
