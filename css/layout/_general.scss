@@ -18,13 +18,13 @@ img {
     box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
     border-radius: 4px;
 }
-h1 {
-  font-size: 60px;
+h1, h2, h3, h4, h5{
   margin: 0;
+  letter-spacing: 0.1rem;
 }
 h2 {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 100;
 }
 h3 { 
     @include fontfamily (
@@ -39,7 +39,7 @@ h3 {
 a {
   text-decoration: none;
   display: block;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   font-weight: 100;
   font-size: 15px;
   &::first-letter{
