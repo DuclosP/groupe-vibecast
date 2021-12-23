@@ -18,18 +18,92 @@ img {
 
 h3 { 
     @include fontfamily (
-        $size : 34px,
-        $weight : 800, 
-        $height : 44.2px,
+    $size : 34px,
+    $weight : 800, 
+    $height : 44.2px,
     )
 }
-//le swiper !
-.swiper {
-    width: 1200px;
-    height: 300px;
-    .swiper{
-        
+//section5 swiperito
+.section5{
+    h3{
+        color: #000;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 40px;
     }
-  }
-  
-
+    //le swiper !
+    .swiper{
+        .swiper-button-prev {
+            color: #777;
+            // width: 10%;
+            // height: 120px;
+            // background: url(../img/fleche-g.svg) center/cover;
+            // transform: translateY(-50%);
+            // &:after{
+            //     display: none;
+            &:hover{
+                color: #0089FE ;
+            }
+        }
+        .swiper-button-next {
+            color: #777;
+            // width: 10%;
+            // height: 120px;
+            // background: url(../img/fleche-g.svg) center/cover;
+            // transform: translateY(-50%) rotate(180deg);
+            // &:after{
+            //     display: none;
+            // }
+            &:hover{
+                color: #0089FE ;
+            }
+        }
+        height: 400px;
+        .swiper-wrapper{
+            .swiper-slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .slider-txt{
+                    width: 75%;
+                    background-color: #F6FBFF;
+                    padding: 10px 50px;
+                    font-size: 28px;
+                    line-height: 1.5;
+                }
+                .slider-lien{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        position: relative;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #777;
+                        margin: 0 20px;
+                        padding-bottom: 10px;
+                    }
+                    a:hover{
+                        color: #0089FE ;
+                    }
+                    a:last-child:before {
+                        content: ".";
+                        position: absolute;
+                        left: -25%;
+                    }
+                }
+                
+            }
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 20px;
+                height: 20px;
+                margin: 5px;
+                &:hover{
+                    background-color: #0089FE;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
