@@ -107,3 +107,82 @@ h3 {
         }
     }
 }
+//section8 les questions
+//centré avec flex
+.section8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202020;
+    h3{
+        color: #000;
+        text-align: center;
+    }
+    .box-text{
+        width: 60%;
+    }
+    .questions-box{
+        border-top: 1px solid #CDCDCD;
+        .titre-question{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+
+            &:hover{
+                color: #0089FE;
+            }
+            h4{
+                margin: 0;
+                padding: 0;
+                font-size: 22px;
+            }
+            //design du plus
+            .plus{
+                position: relative;
+                &:before, &:after{
+                    content: "";
+                    position: absolute;
+                    left: -20px;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #CDCDCD;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:after{
+                    transform: rotate(90deg);
+                }
+            }
+            .moin{
+                &:before, &:after{
+                    transform: rotate(-180deg);
+                    transition: all 0.2s ease-in-out;
+                    background-color: #0089FE;
+                }
+            }
+        }
+
+    }
+    .defil-question{
+        //utilisation du max-height car la transition ne fonctionne pas avec une valeur en %
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease-out;
+    }
+    .open{
+        max-height: 150px;
+    }
+    p{
+        border-top: 1px solid #CDCDCD;
+        text-align: center;
+        padding-top: 30px;
+        a{
+            text-decoration: none;
+            color: #0089FE;
+            &:hover{
+                color: #1a69ad;
+            }
+        }
+    }
+}
