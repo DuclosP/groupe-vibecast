@@ -33,20 +33,35 @@ h3 {
     }
     //le swiper !
     .swiper{
+        position: relative;
         .swiper-button-prev {
             color: #777;
+            height: 100%;
+            width: 10%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
             // width: 10%;
             // height: 120px;
             // background: url(../img/fleche-g.svg) center/cover;
             // transform: translateY(-50%);
             // &:after{
             //     display: none;
+            // }
+
             &:hover{
                 color: #0089FE ;
             }
         }
         .swiper-button-next {
             color: #777;
+            height: 100%;
+            width: 10%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
             // width: 10%;
             // height: 120px;
             // background: url(../img/fleche-g.svg) center/cover;
