@@ -8,6 +8,9 @@
   top: 0;
   left: 0;
   color: white;
+  @media (max-width: 880px){
+    height: 80%;
+    }
 }
 .overlay {
     position: absolute;
@@ -31,7 +34,14 @@
   .hero-title{
     font-size: 30px;
     margin-bottom: 2%;
-
+  @media (max-width: 880px){
+    font-size: 22px;
+  }
+  }
+  h2{
+  @media (max-width: 880px){
+    font-size: 18px;
+  }
   }
   .hero-button{
     display: flex;
