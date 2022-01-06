@@ -57,22 +57,22 @@
             opacity: 1;
         }
         .img-link:nth-of-type(1) {
-            background: url(../../img/715504b12ab74908944ff6994c1bcf1a.jpg) center/cover;
+            background: url(../img/715504b12ab74908944ff6994c1bcf1a.jpg) center/cover;
         }
         .img-link:nth-of-type(2) {
-            background: url(../../img/ed70ff2c31bc40c6b7ede854104c6671.jpg) center/cover;
+            background: url(../img/ed70ff2c31bc40c6b7ede854104c6671.jpg) center/cover;
         }
         .img-link:nth-of-type(3) {
-            background: url(../../img/590c304d5c2d47d29dddb91a6e6c9700.jpg) center/cover;
+            background: url(../img/590c304d5c2d47d29dddb91a6e6c9700.jpg) center/cover;
         }
         .img-link:nth-of-type(4) {
-            background: url(../../img/the-neighbors.jpg) center/cover;
+            background: url(../img/the-neighbors.jpg) center/cover;
         }
         .img-link:nth-of-type(5) {
-            background: url(../../img/9c2cec44fdc6413f96d72e363de1b746.jpg) center/cover;
+            background: url(../img/9c2cec44fdc6413f96d72e363de1b746.jpg) center/cover;
         }
         .img-link:nth-of-type(6) {
-            background: url(../../img/bb92a782ce1446529e4c7ef3654035d4.jpg) center/cover;
+            background: url(../img/bb92a782ce1446529e4c7ef3654035d4.jpg) center/cover;
         }
     }
     p {
@@ -162,6 +162,7 @@
                     color: #007be5;
                     font-weight: bold;
                     margin: 10px 0 20px;
+                    text-align: center;
                 }
             }
             .sbloc-prix {
@@ -212,8 +213,14 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        div {
+        .more-3blocs {
             display: flex;
+            align-items: center;
+            .more-1bloc {
+                width: calc(100%/3);
+                padding: 20px;
+                
+            }
         }
     }
 }
