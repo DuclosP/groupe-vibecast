@@ -34,7 +34,6 @@ h2 {
 
 h3 { 
     @include fontfamily (
-<<<<<<< HEAD
     $size : 34px,
     $weight : 800, 
     $height : 44.2px,
@@ -245,11 +244,3 @@ a {
             }
         }
         
-=======
-        $size : 34px,
-        $weight : 800, 
-        $height : 44.2px,
-        $color : black,
-    )
-}
->>>>>>> deuxieme
