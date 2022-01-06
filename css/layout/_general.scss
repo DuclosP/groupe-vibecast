@@ -25,3 +25,10 @@ h3 {
     )
 }
 
+p {
+    @include fontfamily (
+    $size : 20px,
+    $color : #0c0c0c,
+    )
+}
+
