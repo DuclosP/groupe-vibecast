@@ -3,6 +3,9 @@
   color: white;
   padding: 48px 0;
   width: 100%;
+  a:hover{
+          color: #0089fe;
+        }
   .wrapper{
     width: 100%;
     max-width: 1200px;
@@ -23,6 +26,7 @@
       font-size: 12px;
       letter-spacing: 0.05em;
     }
+    
     nav{
       display: flex;
       align-items: center;
@@ -38,11 +42,26 @@
         width: 48px;
         margin-left: 16px;
         color:black;
+        &:nth-of-type(1):hover{
+          background-color: #c13584;
+        }
+        &:nth-of-type(2):hover{
+          background-color: rgb(117, 172, 248);
+        }
+        &:nth-of-type(3):hover{
+          background-color: rgb(89, 128, 236);
+        }
+        &:nth-of-type(4):hover{
+          background-color: green;
+        }
         i{
           position: relative;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          &:hover{
+          color: white;
+        }
           @media (max-width: 880px){
             display: block;
     }
