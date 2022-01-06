@@ -29,3 +29,13 @@ for(let i=0; i<btnPlus.length; i++){
     btnPlus[i].classList.toggle("moin");
   })
 }
+//Les popups
+let startBtn = document.querySelectorAll(".popup-start");
+let popup = document.querySelector(".popup-bg")
+console.log(startBtn);
+for(let i=0; i<startBtn.length; i++){
+  startBtn[i].addEventListener("click", () => {
+    popup.classList.add("open-popup")
+  })
+}
+document.querySelector(".popup-croix").addEventListener("click", () => {popup.classList.remove("open-popup")})
