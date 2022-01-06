@@ -1,1 +1,60 @@
+// section 1 // 
 
+.dj-demo h3 { 
+    @include fontfamily (
+        $size : 34px,
+        $weight : 800, 
+        $height : 44.2px,
+        $color: black,
+    )
+}
+
+.dj-demo p {
+    @include fontfamily (
+        $size : 19px,
+        $height : 39.4px,
+        $color: black,
+    )
+}
+
+.dj-demo {
+    display: flex;
+    width:100%;
+    margin-bottom: 500px ;
+}
+
+.dj-demo > * {
+    width:80%;
+    position: relative;
+}
+
+.dj-demo img {
+    display: block;
+    height:auto;
+    position: absolute;
+}
+
+.dj-demo .shadowbloc:nth-child(1) {
+    padding: 0 0 87%;
+} 
+
+.dj-demo .shadowbloc:nth-child(1) img {
+width: 100%;
+}
+
+.dj-demo .shadowbloc:nth-child(2) {
+    padding: 0 0 68%;
+
+}
+
+.dj-demo .shadowbloc:nth-child(2) img {
+    right:0;
+    bottom:0;
+    width:40%;
+    top:0;
+}
+
+.box-txt {
+    width: 60%;
+    padding: 0 150px 0 0;
+}
