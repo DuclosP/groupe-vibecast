@@ -4,11 +4,21 @@
   padding: 48px 0;
   width: 100%;
   .wrapper{
+    width: 100%;
     max-width: 1200px;
     padding: 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 880px){
+    flex-direction: column-reverse;
+    }
+    div{
+      @media (max-width: 880px){
+        margin-bottom: 25px;
+        text-align: center;
+      }
+    }
     p, a{
       font-size: 12px;
       letter-spacing: 0.05em;
@@ -17,6 +27,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      a:first-child{
+        margin-left: 0;
+      }
       a{
         position: relative;
         z-index: 100;
@@ -30,6 +43,9 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          @media (max-width: 880px){
+            display: block;
+    }
         }
       }
     }
@@ -38,3 +54,4 @@
     color: white;
   }
 }
+
