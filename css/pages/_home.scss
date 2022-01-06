@@ -207,5 +207,13 @@
 
 // section 9
 .sect-more {
-    
+    .box-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        div {
+            display: flex;
+        }
+    }
 }
