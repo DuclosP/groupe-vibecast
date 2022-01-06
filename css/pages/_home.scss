@@ -25,12 +25,11 @@
                 z-index: 5;
                 position: relative;
             transition: all 0.2s ease-in-out ;
-
                 @include fontfamily (
                 $size : 21px,
                 $weight : 800, 
                 $color : #0c0c0c,
-                )
+                );
                 span {
                     padding: 10px;
                     margin: 10px;
@@ -72,6 +71,38 @@
         }
         .img-link:nth-of-type(6) {
             background: url(../../img/bb92a782ce1446529e4c7ef3654035d4.jpg) center/cover;
+        }
+    }
+    p {
+        @include fontfamily (
+                $size : 20px,
+                $color : #0c0c0c,
+        );
+        margin-bottom: 40px;        
+    }
+}
+
+.sect-price {
+    width: 100%;
+    background-color: #f6fbff;
+    padding: 60px 40px;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    p, li {
+        @include fontfamily (
+                $size : 20px,
+                $color : #0c0c0c,
+        );
+    }
+    .bloc-3box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .shadowbloc {
+            background: white;
+            padding: 24px 32px 32px;
         }
     }
 }
