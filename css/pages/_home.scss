@@ -10,7 +10,7 @@
         height: calc(288px*2);
         width: 100%;
         .img-link {
-            width: 33%;
+            width: calc(100% / 3);
             height: 288px;
             position: relative;
             a {
@@ -24,7 +24,7 @@
                 align-items: start;
                 z-index: 5;
                 position: relative;
-            transition: all 0.2s ease-in-out ;
+                transition: all 0.2s ease-in-out ;
                 @include fontfamily (
                 $size : 21px,
                 $weight : 800, 
@@ -75,8 +75,8 @@
     }
     p {
         @include fontfamily (
-                $size : 20px,
-                $color : #0c0c0c,
+        $size : 20px,
+        $color : #0c0c0c,
         );
         margin-bottom: 40px;        
     }
@@ -90,11 +90,20 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    p, li {
+    @include fontfamily (
+    $color : #0c0c0c,
+    );
+    .box-txt>p, li {
         @include fontfamily (
-                $size : 20px,
-                $color : #0c0c0c,
-        );
+        $size : 20px,
+        $color : #0c0c0c,
+        )
+    }
+    .list {
+        li {
+            list-style: none;
+            line-height: 40px;
+        }
     }
     h3 {
         text-align: center;
@@ -103,9 +112,91 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 40px;
+        .list {
+            margin-right: 80px;
+            ul {
+                padding: 0;
+            }
+            li {
+                display: flex;
+            }
+            .tick {
+                height: 24px;
+                width: 24px;
+                margin-right: 8px;
+                margin-top: 4px;
+                svg {
+                    height: 24px;
+                    width: 24px;
+                }
+                .icon-tick {
+                    height: 100%;
+                    width: 100%;
+                    fill: #05b564;
+                }
+            }
+        }
         .shadowbloc {
             background: white;
             padding: 24px 32px 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 8px;
+            h4 {
+                margin: 0;
+            }
+            
+            .sbloc-head{
+                border-bottom: 1px solid #ececec;
+                width: 100%;
+                p {
+                    color: #007be5;
+                    font-weight: bold;
+                    margin: 10px 0 20px;
+                }
+            }
+            .sbloc-prix {
+                p:nth-of-type(1) {
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                    small {
+                        font-size: 14px;
+                        color: #505050;
+                    }
+                }
+                p:nth-of-type(2) {
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+            }
+            .sbloc-foot {
+                display: flex;
+                flex-direction: column;
+                small {
+                    font-size: 11px;
+                    margin-bottom: 10px;
+                    line-height: 15px;
+                    color: #505050;
+                    font-weight: 700;
+                }
+            }
+            .btn {
+                font-size: 16px;
+            }
+        }
+        .shadowbloc:nth-of-type(2), .shadowbloc:nth-of-type(3) {
+            margin-left: 30px;
+        }
+        .shadowbloc:nth-of-type(3) {
+            h4 {
+                margin-bottom: 20px;
+            }
         }
     }
 }
