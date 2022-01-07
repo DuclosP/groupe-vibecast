@@ -1,1 +1,185 @@
+// section 1 // 
 
+.dj-demo {
+    display: flex;
+    width:100%;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: -50px;
+    padding: 0 32px;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.showcase-image {
+    object-fit: cover;
+}
+
+// la section à gauche // 
+
+.dj-demo .box-txt {
+    width: 40%;
+    position: relative;
+    padding-right: 100px;
+    align-items: center;
+    display: flex;
+}
+
+// la section à droite // 
+
+.showcase-group {
+    display: block;
+    padding: 0 16px 16px 0;
+    position:  relative;
+    width:56%;
+    margin: 0 0 24px;
+}
+
+.show-desktop, .show-mobile {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
+    overflow: hidden;
+}
+
+// section ordinateur // 
+
+.show-desktop {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 0 87%;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+} 
+
+// section mobile // 
+
+.show-mobile {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    padding: 0 0 68%;
+    width: 40%;
+    height: 50px;
+    overflow: hidden;
+} 
+
+// section 2 // 
+
+.releases {
+    flex-direction: row-reverse;
+    display: flex;
+    width:100%;
+    padding: 0 32px;
+    position:  relative;
+    text-align: left;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 100px;
+    .box-txt {
+        width: 41%;
+        margin: 0;
+        padding: 0 32px 0 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box-img {
+        display: block;
+        padding: 0 0 40%;
+        position:  relative;
+        width:56%;
+        margin: 0;
+        height: 0;
+        overflow: hidden;
+        .releases-img {
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
+            overflow: hidden;
+        }
+    }
+}
+
+// section 3 // 
+
+.your-style {
+    margin-bottom: 128px;
+    .box-txt {
+        h3 {
+            text-align: center;
+        }
+        p {text-align: center;}
+    }
+}
+
+.preview-grid {
+    display:flex;
+    margin: 0 100px;
+    justify-content: space-between;
+}
+
+// élément de gauche et droite //
+
+.preview-item {
+    margin: 0;
+    padding: 0 16px;
+    max-width: 512px;
+    text-align: center;
+    flex: 1;
+    position: relative;
+    display: block;
+    .btn {
+        margin-top: 50px;
+    }
+} 
+
+// section ordinateur // 
+
+.style-desktop {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 0 87%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
+} 
+
+// section mobile // 
+
+.style-mobile {
+
+    top: 100px;
+    position: absolute;
+    right: 0;
+    padding: 0 0 66%;
+    width: 32%;
+    height: 50px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
+} 
+
+// section 4 // 
+
+.box-vid {
+    background-color: #000;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    iframe {
+        height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+}

@@ -1,6 +1,13 @@
 body {
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
 }
+=======
+    width:100%;
+    height:100%;
+}
+
+>>>>>>> 8cde26de7d134231c1fe4703e7d7a9984766f51a
 .wrapper  {
     width: 1200px; 
     margin: 0 auto;
@@ -12,6 +19,8 @@ body {
 
 img {
     display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .shadowbloc {
@@ -31,6 +40,15 @@ h3 {
     $size : 34px,
     $weight : 800, 
     $height : 44.2px,
+    $color: black,
+    )
+}
+
+p {
+    @include fontfamily (
+    $size : 19px,
+    $height : 39.4px,
+    $color: black,
     )
 }
 .top-nav a{
