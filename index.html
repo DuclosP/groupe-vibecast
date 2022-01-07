@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/styles.min.css">
   <title>vibecast</title>
 </head>
 <body>
+  <!-- POPUPS -->
+  <div class="popup-bg">
+    <div class="started-popup">
+      <div class="popup-croix">
+        <div class="trait"></div>
+      </div>
+      <div class="popup-content">
+        <h1>get started</h1>
+        <p>Start your <strong>14 day FREE trial</strong> and get your website online in minutes. </p>
+        <label for="mail">Your email address</label>
+        <input id="mail" type="email">
+      </div>
+      <button class="btn btn-green">send activation link</button>
+    </div>
+  </div>
+  <div class="popup-bg">
+    <div class="video-popup">
+      <div class="popup-croix">
+        <div class="trait"></div>
+      </div>
+      <div>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/VufvKNVEAIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
   <!-- 1 HEADER -->
   <header class="header">
     <div class="overlay"></div>
@@ -15,7 +41,7 @@
       <nav class="navbar">
         <a href="">blog</a>
         <a href="">log in</a>
-        <button class="btn btn-green">get started for free</button>
+        <button class="btn btn-green popup-start">get started for free</button>
       </nav>
     </div>
     <div class="hero">
@@ -26,8 +52,8 @@
         <h2>The website builder for DJs</h2>
       </div>
       <div class="hero-button">
-        <button class="btn btn-green">get started for free</button>
-        <button class="btn btn-white"><i class="fas fa-play"></i>watch the video</button>
+        <button class="btn popup-start btn-green">get started for free</button>
+        <button class="btn btn-white popup-video"><i class="fas fa-play"></i>watch the video</button>
       </div>
     </div>
   </header>
@@ -49,7 +75,7 @@
       <div class="box-txt">
         <h3>Effortless admin</h3>
         <p>Import from Soundcloud, Mixcloud, YouTube and more. Add photos, gigs, releases and share your latest news on a simple Drag & Drop builder. </p>
-        <button class="btn">Watch the video</button>
+        <button class="btn popup-video">Watch the video</button>
       </div>
       <div class="box-img">
         <img src="img/showcase-app.jpg" alt="showcase" class="shadowbloc">
@@ -82,25 +108,73 @@
       </div>
     </section>
     <!-- Section 5 -->
-    <section>
+    <section class="section5">
       <div class="box-txt">
         <h3>So much love ♥</h3>
       </div>
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>DJs, I highly recommend @VibecastMusic for your website. I've been using it for a while, impressed with how easy it is to set up and chuffed to bits with how my site looks www.darpermusic.com. Take a look, you'll save a lot of time www.vibecast.com.</p>
+              <div class="slider-lien">
+                <a href="">Darper</a> 
+                <a href="">View tweet</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>Producers, I recently made a website using @VibecastMusic and I want recommend the platform. Easy to use, great support and an amazing clean professional looking website. Check mine out here www.jaaku.co.uk.</p>
+              <div class="slider-lien">
+                <a href="">Jaaku </a>
+                <a href="">View tweet </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>I highly recommend @VibecastMusic for your DJ website. My ting www.saulbliss.com was super easy to set up, love how simple it is to use, all my content is in one place, and it's helped me get more gigs. DJs, you should defo check the powerful bad boy www.vibecast.com.</p> 
+              <div class="slider-lien">
+                <a href="">Saul Bliss </a>
+                <a href="">View tweet</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>My pals over @VibecastMusic have come up with a great solution for artists to build their own website in a way that no social media platform can offer. I'm really happy with mine, it was easy as anything to set up. Check www.dexterkane.com for a idea of what it can do.</p> 
+              <div class="slider-lien">
+                <a href="">Dexter Kane</a> 
+                <a href="">View tweet</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>I've been using www.vibecast.com for my website and to keep my fans updated with all things Forsyth www.forsythmusic.com. It's easy to use and convey who you are as an artist through the layout of the site (plus it looks dope). I highly recommended @VibecastMusic.</p> 
+              <div class="slider-lien">
+                <a href="">Forsyth</a> 
+                <a href="">View tweet</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-txt">
+              <p>I've been using @VibecastMusic for about a year now for my website. It is a fantastic solution to what was once a daunting task. Highly recommend for any DJ or producer! Check out my website www.chuckwoodward.ca.</p> 
+              <div class="slider-lien">
+                <a href="">Chuck Woodward </a>
+                <a href="">View tweet</a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </section>
     <!-- Section 6 -->
@@ -168,7 +242,7 @@
           </div>
           <div>
             <p>14 day free trial <br> No credit card required</p>
-            <button class="btn">Get Started for Free</button>
+            <button class="btn popup-start">Get Started for Free</button>
           </div>
         </div>
         <div class="shadowbloc">
@@ -180,13 +254,13 @@
           </div>
           <div>
             <p>14 day free trial <br>No credit card required</p>
-            <button class="btn">Get Started for Free</button>
+            <button class="btn popup-start">Get Started for Free</button>
           </div>
         </div>
       </div>
     </section>
     <!-- Section 8 -->
-    <section>
+    <section class="section8">
       <div class="box-text">
         <h3>Your questions answered</h3>
         <div class="questions-box">
@@ -196,61 +270,56 @@
           </div>
           <div class="defil-question">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Yes, absolutely. Vibecast is suitable for musicians, producers, bands, record labels, performers and other similar creatives.</li>
+              <li>Anyone who would like to showcase audio, video, images, tracks, gigs or post news will find Vibecast useful.</li>
+              <li>During early access, platform development and marketing is focused towards DJs.</li>
             </ul>
           </div>
         </div>
         <div class="questions-box">
           <div class="titre-question">
-            <h4>Can musicians and other artists use Vibecast?</h4>
+            <h4>Do I need any design or coding skills?</h4>
             <div class="plus"></div>
           </div>
           <div class="defil-question">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Not at all. Vibecast's easy to use and intuitive drag and drop interface allows anyone to create a slick looking website in minutes.</li>
             </ul>
           </div>
         </div>
         <div class="questions-box">
           <div class="titre-question">
-            <h4>Can musicians and other artists use Vibecast?</h4>
+            <h4>Can I connect my domain name?</h4>
             <div class="plus"></div>
           </div>
           <div class="defil-question">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Yes, you can connect a new or existing domain name to your Vibecast website.</li>
+              <li>During early access, we'll even help connect your domain name for free.</li>
             </ul>
           </div>
         </div>
         <div class="questions-box">
           <div class="titre-question">
-            <h4>Can musicians and other artists use Vibecast?</h4>
+            <h4>Why not use WordPress or other website builders?</h4>
             <div class="plus"></div>
           </div>
           <div class="defil-question">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>For general websites, both are great options. However, WordPress and other site builders focus on trying to please everyone. As a DJ you're overloaded with too many options you don't need, at the expense of the ones you do.</li>
+              <li>Vibecast is a website builder with a focus towards DJs.</li>
             </ul>
           </div>
         </div>
         <div class="questions-box">
           <div class="titre-question">
-            <h4>Can musicians and other artists use Vibecast?</h4>
+            <h4>What if I need more time after the free trial?</h4>
             <div class="plus"></div>
           </div>
           <div class="defil-question">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>No problem. We understand that 14 days is not always enough time, or you might have been busy with other things.</li>
+              <li>Send an email to support@vibecast.com with your request, and we'll happily extend your free trial period.</li>
             </ul>
           </div>
         </div>
@@ -311,6 +380,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/193b533ce6.js" crossorigin="anonymous"></script>
 </body>
