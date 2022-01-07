@@ -31,11 +31,20 @@ for(let i=0; i<btnPlus.length; i++){
 }
 //Les popups
 let startBtn = document.querySelectorAll(".popup-start");
-let popup = document.querySelector(".popup-bg")
+let videoBtn = document.querySelectorAll(".popup-video");
+let croix = document.querySelectorAll(".popup-croix");
+let popup = document.querySelectorAll(".popup-bg");
 console.log(startBtn);
 for(let i=0; i<startBtn.length; i++){
   startBtn[i].addEventListener("click", () => {
-    popup.classList.add("open-popup")
+    popup[0].classList.add("open-popup");
   })
 }
-document.querySelector(".popup-croix").addEventListener("click", () => {popup.classList.remove("open-popup")})
+for(let i=0; i<videoBtn.length; i++){
+  videoBtn[i].addEventListener("click", () => {
+    popup[1].classList.add("open-popup");
+  })
+}
+
+croix[0].addEventListener("click", () => {popup[0].classList.remove("open-popup")});
+croix[1].addEventListener("click", () => {popup[1].classList.remove("open-popup")});

@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 1000;
     .started-popup{
         background-color: #fff;
         opacity: 1;
@@ -20,16 +21,24 @@
         flex-direction: column;
         justify-content: space-evenly;
         border-radius: 4px;
+        position: relative;
+        z-index: 1000;
         .popup-croix{
             align-self: flex-end;
             width: 40px;
             height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
             .trait{
                 position: relative;
                 width: 25px;
                 height: 3px;
-                transform: rotate(45deg);
                 background-color: #585858;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
                 &:before{
                     content: "";
                     position: absolute;
@@ -40,6 +49,9 @@
                     transform: rotate(90deg);
                     background-color: #585858;
                 }
+            }
+            &:hover{
+                cursor: pointer;
             }
         }
         .popup-content{
@@ -70,6 +82,38 @@
         }
         button{
             align-self: flex-end;
+        }
+    }
+    .video-popup{
+        position: relative;
+        z-index: 1000;
+        .popup-croix{
+            align-self: flex-end;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            .trait{
+                position: relative;
+                width: 25px;
+                height: 3px;
+                background-color: #585858;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 25px;
+                    height: 3px;
+                    transform: rotate(90deg);
+                    background-color: #585858;
+                }
+            }
         }
     }
 }
