@@ -15,7 +15,7 @@ img {
 }
 
 .shadowbloc {
-    box-shadow: 0 0 16px 5px rgba(98,98,98,16%);
+    box-shadow: 0 0 16px 5px rgba(98,98,98,0.16);
     border-radius: 4px;
 }
 h1, h2, h3, h4, h5{
@@ -28,9 +28,10 @@ h2 {
 }
 h3 { 
     @include fontfamily (
-    $size : 34px,
-    $weight : 800, 
-    $height : 44.2px,
+        $size : 34px,
+        $weight : 800, 
+        $height : 44.2px,
+        $color : black,
     )
 }
 .top-nav a{
@@ -46,5 +47,18 @@ a {
         text-transform: uppercase;
     }
     
+}
+
+p {
+    @include fontfamily (
+    $size : 20px,
+    $color : #0c0c0c,
+    )
+}
+
+label, input {
+    @include fontfamily (
+        $color : #0c0c0c,
+        )
 }
 
