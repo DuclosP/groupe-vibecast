@@ -251,3 +251,26 @@
         }
     }
 }
+
+// section 10
+.sect-loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include fontfamily ;
+    label {
+        font-size: 14px;
+        color: #5d5d5d;
+    }
+        .input-btn {
+            input {
+                height: 48px;
+                width: 400px;
+                font-size: 20px;
+                margin-top: 8px;
+                margin-right: 10px;
+                padding-left: 10px;
+            }
+        }
+    
+}
